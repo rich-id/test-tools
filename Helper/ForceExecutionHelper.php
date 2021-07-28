@@ -22,8 +22,36 @@ class ForceExecutionHelper
     }
 
     /**
+     * @param object|class-string<object> $class
+     * @param array<string, mixed>        $data
+     *
+     * @return mixed|object
+     */
+    public static function build(string $class, array $data)
+    {
+        $object = new $class();
+
+        return self::update($object, $data);
+    }
+
+    /**
      * @param object|class-string<object> $object
-     * @param array|mixed   $args
+     * @param array<string, mixed>        $data
+     *
+     * @return mixed|object
+     */
+    public static function update($object, array $data)
+    {
+        foreach ($data as $key => $value) {
+            self::setValue($object, $key, $value);
+        }
+
+        return $object;
+    }
+
+    /**
+     * @param object|class-string<object> $object
+     * @param array|mixed                 $args
      *
      * @return mixed
      */
@@ -42,7 +70,7 @@ class ForceExecutionHelper
 
     /**
      * @param object|class-string<object> $object
-     * @param mixed $value
+     * @param mixed                       $value
      */
     public static function setValue($object, string $propertyName, $value): void
     {

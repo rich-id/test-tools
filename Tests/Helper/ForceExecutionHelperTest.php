@@ -13,14 +13,16 @@ use RichCongress\TestTools\Tests\Resources\Entity\DummyEntity;
  * @author    Nicolas Guilloux <nguilloux@richcongress.com>
  * @copyright 2014 - 2020 RichCongress (https://www.richcongress.com)
  *
- * @covers \RichCongress\TestTools\Helper\ForceExecutionHelper
+ * @covers    \RichCongress\TestTools\Helper\ForceExecutionHelper
  */
 class ForceExecutionHelperTest extends TestCase
 {
     public function testCannotInstanciateHelper(): void
     {
         $this->expectException(\Error::class);
-        $this->expectExceptionMessage('Call to private RichCongress\TestTools\Helper\ForceExecutionHelper::__construct()');
+        $this->expectExceptionMessage(
+            'Call to private RichCongress\TestTools\Helper\ForceExecutionHelper::__construct()'
+        );
 
         new ForceExecutionHelper();
     }
@@ -37,7 +39,9 @@ class ForceExecutionHelperTest extends TestCase
     public function testExecuteMethodWithBadObject(): void
     {
         $this->expectException(\LogicException::class);
-        $this->expectExceptionMessage('Cannot call a non static method without the instanciated object for ' . DummyEntity::class);
+        $this->expectExceptionMessage(
+            'Cannot call a non static method without the instanciated object for ' . DummyEntity::class
+        );
 
         ForceExecutionHelper::executeMethod(DummyEntity::class, 'setName', 'ThisIsATest');
     }
@@ -68,7 +72,9 @@ class ForceExecutionHelperTest extends TestCase
     public function testSetValueWithBadObject(): void
     {
         $this->expectException(\LogicException::class);
-        $this->expectExceptionMessage('Cannot call a non static property without the instanciated object for ' . DummyEntity::class);
+        $this->expectExceptionMessage(
+            'Cannot call a non static property without the instanciated object for ' . DummyEntity::class
+        );
 
         ForceExecutionHelper::setValue(DummyEntity::class, 'name', 'ThisIsATest');
     }
@@ -94,5 +100,36 @@ class ForceExecutionHelperTest extends TestCase
         $this->expectExceptionMessage('he first argument must be an object or a class name, double given.');
 
         ForceExecutionHelper::setValue(0.1, 'staticName', 'ThisIsATest');
+    }
+
+    public function testBuild(): void
+    {
+        $object = ForceExecutionHelper::build(
+            DummyEntity::class,
+            [
+                'name'    => 'ThisIsATest',
+                'keyname' => 'KeyName',
+            ]
+        );
+
+        self::assertInstanceOf(DummyEntity::class, $object);
+        self::assertSame('ThisIsATest', $object->getName());
+        self::assertSame('KeyName', $object->getKeyname());
+    }
+
+    public function testUpdate(): void
+    {
+        $object = new DummyEntity();
+        $result = ForceExecutionHelper::update(
+            $object,
+            [
+                'name'    => 'ThisIsATest',
+                'keyname' => 'KeyName',
+            ]
+        );
+
+        self::assertSame($object, $result);
+        self::assertSame('ThisIsATest', $object->getName());
+        self::assertSame('KeyName', $object->getKeyname());
     }
 }
