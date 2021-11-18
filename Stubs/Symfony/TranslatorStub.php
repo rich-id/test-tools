@@ -29,7 +29,7 @@ class TranslatorStub implements TranslatorInterface
     public function trans($id, array $parameters = [], $domain = null, $locale = null): string
     {
         if (!array_key_exists($id, $this->translations)) {
-            return '';
+            return $id;
         }
 
         $translation = $this->translations[$id];
