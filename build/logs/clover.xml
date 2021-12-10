@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1639128007">
-  <project timestamp="1639128007">
+<coverage generated="1639128178">
+  <project timestamp="1639128178">
     <file name="/app/Accessor/ForcePropertyAccessor.php">
       <class name="RichCongress\TestTools\Accessor\ForcePropertyAccessor" namespace="global">
         <metrics complexity="16" methods="6" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="36" coveredstatements="35" elements="42" coveredelements="40"/>
