@@ -110,11 +110,9 @@ trait MatchAssertionTrait
 
         // Regex test
         if ($parameter->regex !== null) {
-            if (method_exists(static::class, 'assertMatchesRegularExpression')) {
-                self::assertMatchesRegularExpression($parameter->regex, $testedValue, $errorMessage);
-            } else {
-                self::assertRegExp($parameter->regex, $testedValue, $errorMessage);
-            }
+            method_exists(static::class, 'assertMatchesRegularExpression')
+                ? self::assertMatchesRegularExpression($parameter->regex, $testedValue, $errorMessage)
+                : self::assertRegExp($parameter->regex, $testedValue, $errorMessage);
         }
 
         // Choice test
