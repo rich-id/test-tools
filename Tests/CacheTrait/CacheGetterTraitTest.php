@@ -14,6 +14,7 @@ use RichCongress\TestTools\Tests\Resources\Event\DummyEvent;
  * @copyright  2014 - 2020 RichCongress (https://www.richcongress.com)
  *
  * @covers \RichCongress\TestTools\CacheTrait\CachedGetterTrait
+ *
  * @method DummyEvent getEvent()
  * @method bool getLoop()
  * @method static DummyEvent getStaticEvent()

@@ -13,16 +13,9 @@ function debug($object, bool $verbose = false): void
     ob_start();
     \var_dump($object);
     $result = ob_get_clean();
-
-    if (!is_string($result)) {
-        return;
-    }
-
+    $result = is_string($result) ? $result : '';
     $result = preg_replace('/^(.*)GlobalNamespaceHelper\.php(.*)(\s*)/', '', $result);
-
-    if (!is_string($result)) {
-        return;
-    }
+    $result = is_string($result) ? $result : '';
 
     echo trim($result);
 }

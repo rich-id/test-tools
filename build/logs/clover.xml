@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1639128178">
+  <project timestamp="1639128178">
+    <file name="/app/Accessor/ForcePropertyAccessor.php">
+      <class name="RichCongress\TestTools\Accessor\ForcePropertyAccessor" namespace="global">
+        <metrics complexity="16" methods="6" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="36" coveredstatements="35" elements="42" coveredelements="40"/>
+      </class>
+      <line num="22" type="method" name="__construct" visibility="public" complexity="2" crap="2.02" count="11"/>
+      <line num="24" type="stmt" count="11"/>
+      <line num="25" type="stmt" count="11"/>
+      <line num="26" type="stmt" count="11"/>
+      <line num="27" type="stmt" count="11"/>
+      <line num="29" type="stmt" count="0"/>
+      <line num="31" type="stmt" count="11"/>
+      <line num="38" type="method" name="setValue" visibility="public" complexity="3" crap="3" count="7"/>
+      <line num="41" type="stmt" count="7"/>
+      <line num="42" type="stmt" count="6"/>
+      <line num="43" type="stmt" count="6"/>
+      <line num="45" type="stmt" count="6"/>
+      <line num="46" type="stmt" count="2"/>
+      <line num="49" type="stmt" count="4"/>
+      <line num="50" type="stmt" count="4"/>
+      <line num="51" type="stmt" count="4"/>
+      <line num="53" type="stmt" count="5"/>
+      <line num="61" type="method" name="getValue" visibility="public" complexity="3" crap="3" count="7"/>
+      <line num="64" type="stmt" count="7"/>
+      <line num="65" type="stmt" count="4"/>
+      <line num="66" type="stmt" count="4"/>
+      <line num="68" type="stmt" count="4"/>
+      <line num="69" type="stmt" count="2"/>
+      <line num="72" type="stmt" count="2"/>
+      <line num="73" type="stmt" count="2"/>
+      <line num="74" type="stmt" count="2"/>
+      <line num="76" type="stmt" count="2"/>
+      <line num="84" type="method" name="isWritable" visibility="public" complexity="2" crap="2" count="1"/>
+      <line num="86" type="stmt" count="1"/>
+      <line num="87" type="stmt" count="1"/>
+      <line num="94" type="method" name="isReadable" visibility="public" complexity="2" crap="2" count="1"/>
+      <line num="96" type="stmt" count="1"/>
+      <line num="97" type="stmt" count="1"/>
+      <line num="104" type="method" name="getPropertyReflection" visibility="private" complexity="4" crap="4" count="9"/>
+      <line num="106" type="stmt" count="9"/>
+      <line num="107" type="stmt" count="2"/>
+      <line num="110" type="stmt" count="7"/>
+      <line num="112" type="stmt" count="7"/>
+      <line num="113" type="stmt" count="7"/>
+      <line num="114" type="stmt" count="5"/>
+      <line num="117" type="stmt" count="2"/>
+      <line num="120" type="stmt" count="2"/>
+      <metrics loc="122" ncloc="91" classes="1" methods="6" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="36" coveredstatements="35" elements="42" coveredelements="40"/>
+    </file>
+    <file name="/app/CacheTrait/CachedGetterTrait.php">
+      <class name="RichCongress\TestTools\CacheTrait\CachedGetterTrait" namespace="global">
+        <metrics complexity="6" methods="3" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="20" coveredstatements="15" elements="23" coveredelements="17"/>
+      </class>
+      <line num="23" type="method" name="__call" visibility="public" complexity="1" crap="1" count="5"/>
+      <line num="25" type="stmt" count="5"/>
+      <line num="26" type="stmt" count="5"/>
+      <line num="28" type="stmt" count="5"/>
+      <line num="29" type="stmt" count="4"/>
+      <line num="30" type="stmt" count="5"/>
+      <line num="34" type="method" name="__callStatic" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="36" type="stmt" count="0"/>
+      <line num="37" type="stmt" count="0"/>
+      <line num="39" type="stmt" count="0"/>
+      <line num="40" type="stmt" count="0"/>
+      <line num="41" type="stmt" count="0"/>
+      <line num="45" type="method" name="getObject" visibility="private" complexity="4" crap="4" count="5"/>
+      <line num="47" type="stmt" count="5"/>
+      <line num="48" type="stmt" count="2"/>
+      <line num="51" type="stmt" count="4"/>
+      <line num="52" type="stmt" count="4"/>
+      <line num="54" type="stmt" count="4"/>
+      <line num="55" type="stmt" count="1"/>
+      <line num="58" type="stmt" count="4"/>
+      <line num="59" type="stmt" count="4"/>
+      <line num="60" type="stmt" count="2"/>
+      <line num="63" type="stmt" count="2"/>
+      <metrics loc="65" ncloc="55" classes="1" methods="3" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="20" coveredstatements="15" elements="23" coveredelements="17"/>
+    </file>
+    <file name="/app/Helper/ForceExecutionHelper.php">
+      <class name="RichCongress\TestTools\Helper\ForceExecutionHelper" namespace="global">
+        <metrics complexity="17" methods="7" coveredmethods="7" conditionals="0" coveredconditionals="0" statements="39" coveredstatements="39" elements="46" coveredelements="46"/>
+      </class>
+      <line num="30" type="method" name="build" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="32" type="stmt" count="1"/>
+      <line num="34" type="stmt" count="1"/>
+      <line num="43" type="method" name="update" visibility="public" complexity="2" crap="2" count="2"/>
+      <line num="45" type="stmt" count="2"/>
+      <line num="46" type="stmt" count="2"/>
+      <line num="49" type="stmt" count="2"/>
+      <line num="58" type="method" name="executeMethod" visibility="public" complexity="2" crap="2" count="4"/>
+      <line num="60" type="stmt" count="4"/>
+      <line num="61" type="stmt" count="3"/>
+      <line num="62" type="stmt" count="3"/>
+      <line num="63" type="stmt" count="2"/>
+      <line num="64" type="stmt" count="3"/>
+      <line num="66" type="stmt" count="3"/>
+      <line num="68" type="stmt" count="3"/>
+      <line num="75" type="method" name="setValue" visibility="public" complexity="2" crap="2" count="7"/>
+      <line num="77" type="stmt" count="7"/>
+      <line num="78" type="stmt" count="5"/>
+      <line num="79" type="stmt" count="5"/>
+      <line num="80" type="stmt" count="2"/>
+      <line num="81" type="stmt" count="3"/>
+      <line num="83" type="stmt" count="5"/>
+      <line num="84" type="stmt" count="5"/>
+      <line num="89" type="method" name="checkObjectOrString" visibility="protected" complexity="3" crap="3" count="11"/>
+      <line num="91" type="stmt" count="11"/>
+      <line num="92" type="stmt" count="10"/>
+      <line num="95" type="stmt" count="1"/>
+      <line num="96" type="stmt" count="1"/>
+      <line num="97" type="stmt" count="1"/>
+      <line num="98" type="stmt" count="1"/>
+      <line num="106" type="method" name="getReflectionProperty" visibility="protected" complexity="3" crap="3" count="7"/>
+      <line num="108" type="stmt" count="7"/>
+      <line num="110" type="stmt" count="6"/>
+      <line num="111" type="stmt" count="6"/>
+      <line num="113" type="stmt" count="6"/>
+      <line num="114" type="stmt" count="1"/>
+      <line num="115" type="stmt" count="1"/>
+      <line num="119" type="stmt" count="5"/>
+      <line num="125" type="method" name="getReflectionMethod" visibility="protected" complexity="3" crap="3" count="4"/>
+      <line num="127" type="stmt" count="4"/>
+      <line num="129" type="stmt" count="4"/>
+      <line num="130" type="stmt" count="4"/>
+      <line num="132" type="stmt" count="4"/>
+      <line num="133" type="stmt" count="1"/>
+      <line num="134" type="stmt" count="1"/>
+      <line num="138" type="stmt" count="3"/>
+      <metrics loc="140" ncloc="97" classes="1" methods="7" coveredmethods="7" conditionals="0" coveredconditionals="0" statements="39" coveredstatements="39" elements="46" coveredelements="46"/>
+    </file>
+    <file name="/app/Helper/GlobalNamespaceHelper.php">
+      <line num="8" type="stmt" count="3"/>
+      <line num="9" type="stmt" count="1"/>
+      <line num="10" type="stmt" count="1"/>
+      <line num="13" type="stmt" count="2"/>
+      <line num="14" type="stmt" count="2"/>
+      <line num="15" type="stmt" count="2"/>
+      <line num="17" type="stmt" count="2"/>
+      <line num="18" type="stmt" count="0"/>
+      <line num="21" type="stmt" count="2"/>
+      <line num="23" type="stmt" count="2"/>
+      <line num="24" type="stmt" count="0"/>
+      <line num="27" type="stmt" count="2"/>
+      <line num="28" type="stmt" count="2"/>
+      <line num="35" type="stmt" count="1"/>
+      <line num="37" type="stmt" count="1"/>
+      <line num="38" type="stmt" count="1"/>
+      <metrics loc="38" ncloc="32" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="16" coveredstatements="14" elements="16" coveredelements="14"/>
+    </file>
+    <file name="/app/Stubs/Symfony/ContainerStub.php">
+      <class name="RichCongress\TestTools\Stubs\Symfony\ContainerStub" namespace="global">
+        <metrics complexity="8" methods="8" coveredmethods="8" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="11" elements="19" coveredelements="19"/>
+      </class>
+      <line num="30" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="32" type="stmt" count="2"/>
+      <line num="33" type="stmt" count="2"/>
+      <line num="41" type="method" name="set" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="43" type="stmt" count="1"/>
+      <line num="44" type="stmt" count="1"/>
+      <line num="52" type="method" name="get" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="54" type="stmt" count="1"/>
+      <line num="62" type="method" name="has" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="64" type="stmt" count="1"/>
+      <line num="72" type="method" name="initialized" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="74" type="stmt" count="1"/>
+      <line num="82" type="method" name="getParameter" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="84" type="stmt" count="1"/>
+      <line num="92" type="method" name="hasParameter" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="94" type="stmt" count="1"/>
+      <line num="103" type="method" name="setParameter" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="105" type="stmt" count="1"/>
+      <line num="106" type="stmt" count="1"/>
+      <metrics loc="107" ncloc="53" classes="1" methods="8" coveredmethods="8" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="11" elements="19" coveredelements="19"/>
+    </file>
+    <file name="/app/Stubs/Symfony/EntityManagerStub.php">
+      <class name="RichCongress\TestTools\Stubs\Symfony\EntityManagerStub" namespace="global">
+        <metrics complexity="43" methods="9" coveredmethods="9" conditionals="0" coveredconditionals="0" statements="21" coveredstatements="21" elements="30" coveredelements="30"/>
+      </class>
+      <line num="46" type="method" name="flush" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="48" type="stmt" count="1"/>
+      <line num="49" type="stmt" count="1"/>
+      <line num="54" type="method" name="persist" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="56" type="stmt" count="1"/>
+      <line num="57" type="stmt" count="1"/>
+      <line num="58" type="stmt" count="1"/>
+      <line num="59" type="stmt" count="1"/>
+      <line num="64" type="method" name="remove" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="66" type="stmt" count="1"/>
+      <line num="67" type="stmt" count="1"/>
+      <line num="68" type="stmt" count="1"/>
+      <line num="69" type="stmt" count="1"/>
+      <line num="74" type="method" name="getRepository" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="76" type="stmt" count="1"/>
+      <line num="78" type="stmt" count="1"/>
+      <line num="86" type="method" name="setRepository" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="88" type="stmt" count="1"/>
+      <line num="90" type="stmt" count="1"/>
+      <line num="96" type="method" name="find" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="98" type="stmt" count="1"/>
+      <line num="106" type="method" name="addEntity" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="108" type="stmt" count="1"/>
+      <line num="109" type="stmt" count="1"/>
+      <line num="110" type="stmt" count="1"/>
+      <line num="112" type="stmt" count="1"/>
+      <line num="120" type="method" name="getEntities" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="122" type="stmt" count="1"/>
+      <line num="470" type="method" name="getClassMetadata" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="472" type="stmt" count="1"/>
+      <metrics loc="474" ncloc="248" classes="1" methods="9" coveredmethods="9" conditionals="0" coveredconditionals="0" statements="21" coveredstatements="21" elements="30" coveredelements="30"/>
+    </file>
+    <file name="/app/Stubs/Symfony/EventDispatcherStub.php">
+      <class name="RichCongress\TestTools\Stubs\Symfony\EventDispatcherStub" namespace="global">
+        <metrics complexity="10" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="5" coveredelements="5"/>
+      </class>
+      <line num="28" type="method" name="dispatch" visibility="public" complexity="3" crap="3" count="1"/>
+      <line num="30" type="stmt" count="1"/>
+      <line num="31" type="stmt" count="1"/>
+      <line num="34" type="stmt" count="1"/>
+      <line num="36" type="stmt" count="1"/>
+      <metrics loc="110" ncloc="58" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="5" coveredelements="5"/>
+    </file>
+    <file name="/app/Stubs/Symfony/LoggerStub.php">
+      <class name="RichCongress\TestTools\Stubs\Symfony\LoggerStub" namespace="global">
+        <metrics complexity="9" methods="9" coveredmethods="9" conditionals="0" coveredconditionals="0" statements="18" coveredstatements="18" elements="27" coveredelements="27"/>
+      </class>
+      <line num="30" type="method" name="emergency" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="32" type="stmt" count="1"/>
+      <line num="33" type="stmt" count="1"/>
+      <line num="46" type="method" name="alert" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="48" type="stmt" count="1"/>
+      <line num="49" type="stmt" count="1"/>
+      <line num="61" type="method" name="critical" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="63" type="stmt" count="1"/>
+      <line num="64" type="stmt" count="1"/>
+      <line num="75" type="method" name="error" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="77" type="stmt" count="1"/>
+      <line num="78" type="stmt" count="1"/>
+      <line num="91" type="method" name="warning" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="93" type="stmt" count="1"/>
+      <line num="94" type="stmt" count="1"/>
+      <line num="104" type="method" name="notice" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="106" type="stmt" count="1"/>
+      <line num="107" type="stmt" count="1"/>
+      <line num="119" type="method" name="info" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="121" type="stmt" count="1"/>
+      <line num="122" type="stmt" count="1"/>
+      <line num="132" type="method" name="debug" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="134" type="stmt" count="1"/>
+      <line num="135" type="stmt" count="1"/>
+      <line num="148" type="method" name="log" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="150" type="stmt" count="1"/>
+      <line num="151" type="stmt" count="1"/>
+      <metrics loc="152" ncloc="56" classes="1" methods="9" coveredmethods="9" conditionals="0" coveredconditionals="0" statements="18" coveredstatements="18" elements="27" coveredelements="27"/>
+    </file>
+    <file name="/app/Stubs/Symfony/RepositoryStub.php">
+      <class name="RichCongress\TestTools\Stubs\Symfony\RepositoryStub" namespace="global">
+        <metrics complexity="15" methods="8" coveredmethods="8" conditionals="0" coveredconditionals="0" statements="27" coveredstatements="27" elements="35" coveredelements="35"/>
+      </class>
+      <line num="38" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="3"/>
+      <line num="40" type="stmt" count="3"/>
+      <line num="41" type="stmt" count="3"/>
+      <line num="42" type="stmt" count="3"/>
+      <line num="43" type="stmt" count="3"/>
+      <line num="50" type="method" name="find" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="52" type="stmt" count="1"/>
+      <line num="58" type="method" name="findAll" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="60" type="stmt" count="2"/>
+      <line num="71" type="method" name="findBy" visibility="public" complexity="3" crap="3" count="1"/>
+      <line num="73" type="stmt" count="1"/>
+      <line num="74" type="stmt" count="1"/>
+      <line num="76" type="stmt" count="1"/>
+      <line num="77" type="stmt" count="1"/>
+      <line num="78" type="stmt" count="1"/>
+      <line num="82" type="stmt" count="1"/>
+      <line num="90" type="method" name="findOneBy" visibility="public" complexity="3" crap="3" count="1"/>
+      <line num="92" type="stmt" count="1"/>
+      <line num="94" type="stmt" count="1"/>
+      <line num="95" type="stmt" count="1"/>
+      <line num="96" type="stmt" count="1"/>
+      <line num="100" type="stmt" count="1"/>
+      <line num="106" type="method" name="getClassName" visibility="public" complexity="1" crap="1" count="3"/>
+      <line num="108" type="stmt" count="3"/>
+      <line num="114" type="method" name="getManager" visibility="public" complexity="2" crap="2" count="3"/>
+      <line num="116" type="stmt" count="3"/>
+      <line num="117" type="stmt" count="3"/>
+      <line num="118" type="stmt" count="3"/>
+      <line num="121" type="stmt" count="3"/>
+      <line num="130" type="method" name="checkCriteria" visibility="public" complexity="3" crap="3" count="2"/>
+      <line num="132" type="stmt" count="2"/>
+      <line num="133" type="stmt" count="2"/>
+      <line num="135" type="stmt" count="2"/>
+      <line num="136" type="stmt" count="2"/>
+      <line num="140" type="stmt" count="2"/>
+      <metrics loc="142" ncloc="87" classes="1" methods="8" coveredmethods="8" conditionals="0" coveredconditionals="0" statements="27" coveredstatements="27" elements="35" coveredelements="35"/>
+    </file>
+    <file name="/app/Stubs/Symfony/SecurityStub.php">
+      <class name="RichCongress\TestTools\Stubs\Symfony\SecurityStub" namespace="global">
+        <metrics complexity="6" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="21" coveredstatements="21" elements="25" coveredelements="25"/>
+      </class>
+      <line num="34" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="36" type="stmt" count="2"/>
+      <line num="37" type="stmt" count="2"/>
+      <line num="39" type="stmt" count="2"/>
+      <line num="40" type="stmt" count="2"/>
+      <line num="42" type="stmt" count="2"/>
+      <line num="43" type="stmt" count="2"/>
+      <line num="52" type="method" name="setUser" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="54" type="stmt" count="2"/>
+      <line num="55" type="stmt" count="2"/>
+      <line num="57" type="stmt" count="2"/>
+      <line num="58" type="stmt" count="2"/>
+      <line num="60" type="stmt" count="2"/>
+      <line num="66" type="method" name="getRoles" visibility="public" complexity="2" crap="2" count="2"/>
+      <line num="68" type="stmt" count="2"/>
+      <line num="69" type="stmt" count="2"/>
+      <line num="70" type="stmt" count="2"/>
+      <line num="78" type="method" name="updateRoles" visibility="protected" complexity="2" crap="2" count="2"/>
+      <line num="80" type="stmt" count="2"/>
+      <line num="81" type="stmt" count="2"/>
+      <line num="84" type="stmt" count="1"/>
+      <line num="85" type="stmt" count="1"/>
+      <line num="86" type="stmt" count="1"/>
+      <line num="87" type="stmt" count="1"/>
+      <line num="88" type="stmt" count="1"/>
+      <metrics loc="89" ncloc="58" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="21" coveredstatements="21" elements="25" coveredelements="25"/>
+    </file>
+    <file name="/app/Stubs/Symfony/TranslatorStub.php">
+      <class name="RichCongress\TestTools\Stubs\Symfony\TranslatorStub" namespace="global">
+        <metrics complexity="5" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="9" elements="12" coveredelements="12"/>
+      </class>
+      <line num="29" type="method" name="trans" visibility="public" complexity="3" crap="3" count="3"/>
+      <line num="31" type="stmt" count="3"/>
+      <line num="32" type="stmt" count="1"/>
+      <line num="35" type="stmt" count="2"/>
+      <line num="37" type="stmt" count="2"/>
+      <line num="38" type="stmt" count="1"/>
+      <line num="41" type="stmt" count="2"/>
+      <line num="50" type="method" name="addTranslation" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="52" type="stmt" count="2"/>
+      <line num="54" type="stmt" count="2"/>
+      <line num="60" type="method" name="getTranslations" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="62" type="stmt" count="2"/>
+      <metrics loc="64" ncloc="37" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="9" elements="12" coveredelements="12"/>
+    </file>
+    <file name="/app/Stubs/Symfony/ValidationContextStub.php">
+      <class name="RichCongress\TestTools\Stubs\Symfony\ValidationContextStub" namespace="global">
+        <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="8" coveredelements="8"/>
+      </class>
+      <line num="20" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="22" type="stmt" count="1"/>
+      <line num="23" type="stmt" count="1"/>
+      <line num="24" type="stmt" count="1"/>
+      <line num="26" type="stmt" count="1"/>
+      <line num="27" type="stmt" count="1"/>
+      <line num="32" type="method" name="countViolations" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="34" type="stmt" count="1"/>
+      <metrics loc="36" ncloc="23" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="8" coveredelements="8"/>
+    </file>
+    <file name="/app/TestTrait/Assertion/Parameter.php">
+      <class name="RichCongress\TestTools\TestTrait\Assertion\Parameter" namespace="global">
+        <metrics complexity="11" methods="11" coveredmethods="11" conditionals="0" coveredconditionals="0" statements="23" coveredstatements="23" elements="34" coveredelements="34"/>
+      </class>
+      <line num="43" type="method" name="string" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="45" type="stmt" count="2"/>
+      <line num="51" type="method" name="integer" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="53" type="stmt" count="1"/>
+      <line num="59" type="method" name="float" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="61" type="stmt" count="1"/>
+      <line num="67" type="method" name="array" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="69" type="stmt" count="1"/>
+      <line num="75" type="method" name="boolean" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="77" type="stmt" count="1"/>
+      <line num="85" type="method" name="regex" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="87" type="stmt" count="1"/>
+      <line num="88" type="stmt" count="1"/>
+      <line num="90" type="stmt" count="1"/>
+      <line num="98" type="method" name="choice" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="100" type="stmt" count="1"/>
+      <line num="101" type="stmt" count="1"/>
+      <line num="103" type="stmt" count="1"/>
+      <line num="107" type="method" name="arraySubMatch" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="109" type="stmt" count="1"/>
+      <line num="110" type="stmt" count="1"/>
+      <line num="111" type="stmt" count="1"/>
+      <line num="113" type="stmt" count="1"/>
+      <line num="121" type="method" name="instanceOf" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="123" type="stmt" count="1"/>
+      <line num="124" type="stmt" count="1"/>
+      <line num="126" type="stmt" count="1"/>
+      <line num="130" type="method" name="isNullable" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="132" type="stmt" count="1"/>
+      <line num="134" type="stmt" count="1"/>
+      <line num="142" type="method" name="createType" visibility="protected" complexity="1" crap="1" count="2"/>
+      <line num="144" type="stmt" count="2"/>
+      <line num="145" type="stmt" count="2"/>
+      <line num="147" type="stmt" count="2"/>
+      <metrics loc="149" ncloc="92" classes="1" methods="11" coveredmethods="11" conditionals="0" coveredconditionals="0" statements="23" coveredstatements="23" elements="34" coveredelements="34"/>
+    </file>
+    <file name="/app/TestTrait/BeforeAndAfterTestTrait.php">
+      <class name="RichCongress\TestTools\TestTrait\BeforeAndAfterTestTrait" namespace="global">
+        <metrics complexity="6" methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="12" elements="18" coveredelements="18"/>
+      </class>
+      <line num="14" type="method" name="setUp" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="16" type="stmt" count="2"/>
+      <line num="18" type="stmt" count="2"/>
+      <line num="19" type="stmt" count="2"/>
+      <line num="20" type="stmt" count="2"/>
+      <line num="22" type="method" name="setUpTestCase" visibility="protected" complexity="1" crap="1" count="2"/>
+      <line num="25" type="stmt" count="2"/>
+      <line num="27" type="method" name="beforeTest" visibility="protected" complexity="1" crap="1" count="2"/>
+      <line num="30" type="stmt" count="2"/>
+      <line num="32" type="method" name="tearDown" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="34" type="stmt" count="2"/>
+      <line num="35" type="stmt" count="2"/>
+      <line num="37" type="stmt" count="2"/>
+      <line num="38" type="stmt" count="2"/>
+      <line num="40" type="method" name="tearDownTestCase" visibility="protected" complexity="1" crap="1" count="2"/>
+      <line num="43" type="stmt" count="2"/>
+      <line num="45" type="method" name="afterTest" visibility="protected" complexity="1" crap="1" count="2"/>
+      <line num="48" type="stmt" count="2"/>
+      <metrics loc="49" ncloc="38" classes="1" methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="12" elements="18" coveredelements="18"/>
+    </file>
+    <file name="/app/TestTrait/MatchAssertionTrait.php">
+      <class name="RichCongress\TestTools\TestTrait\MatchAssertionTrait" namespace="global">
+        <metrics complexity="25" methods="4" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="48" coveredstatements="47" elements="52" coveredelements="50"/>
+      </class>
+      <line num="29" type="method" name="assertMatch" visibility="protected" complexity="8" crap="8" count="2"/>
+      <line num="32" type="stmt" count="2"/>
+      <line num="33" type="stmt" count="2"/>
+      <line num="34" type="stmt" count="2"/>
+      <line num="39" type="stmt" count="2"/>
+      <line num="40" type="stmt" count="2"/>
+      <line num="42" type="stmt" count="2"/>
+      <line num="43" type="stmt" count="2"/>
+      <line num="44" type="stmt" count="2"/>
+      <line num="45" type="stmt" count="2"/>
+      <line num="46" type="stmt" count="2"/>
+      <line num="47" type="stmt" count="2"/>
+      <line num="50" type="stmt" count="2"/>
+      <line num="56" type="method" name="getMatchValue" visibility="private" complexity="2" crap="2" count="2"/>
+      <line num="58" type="stmt" count="2"/>
+      <line num="59" type="stmt" count="2"/>
+      <line num="62" type="stmt" count="1"/>
+      <line num="71" type="method" name="assertMatchParameter" visibility="private" complexity="14" crap="14" count="2"/>
+      <line num="73" type="stmt" count="2"/>
+      <line num="75" type="stmt" count="2"/>
+      <line num="76" type="stmt" count="1"/>
+      <line num="78" type="stmt" count="1"/>
+      <line num="82" type="stmt" count="2"/>
+      <line num="83" type="stmt" count="2"/>
+      <line num="84" type="stmt" count="2"/>
+      <line num="85" type="stmt" count="2"/>
+      <line num="87" type="stmt" count="1"/>
+      <line num="88" type="stmt" count="1"/>
+      <line num="89" type="stmt" count="1"/>
+      <line num="91" type="stmt" count="1"/>
+      <line num="92" type="stmt" count="1"/>
+      <line num="93" type="stmt" count="1"/>
+      <line num="95" type="stmt" count="1"/>
+      <line num="96" type="stmt" count="1"/>
+      <line num="97" type="stmt" count="1"/>
+      <line num="99" type="stmt" count="1"/>
+      <line num="100" type="stmt" count="1"/>
+      <line num="101" type="stmt" count="1"/>
+      <line num="105" type="stmt" count="2"/>
+      <line num="106" type="stmt" count="1"/>
+      <line num="107" type="stmt" count="1"/>
+      <line num="112" type="stmt" count="2"/>
+      <line num="113" type="stmt" count="1"/>
+      <line num="114" type="stmt" count="1"/>
+      <line num="116" type="stmt" count="0"/>
+      <line num="121" type="stmt" count="2"/>
+      <line num="122" type="stmt" count="1"/>
+      <line num="125" type="stmt" count="2"/>
+      <line num="126" type="stmt" count="1"/>
+      <line num="128" type="stmt" count="2"/>
+      <line num="130" type="method" name="createPropertyAccessor" visibility="private" complexity="1" crap="1" count="1"/>
+      <line num="132" type="stmt" count="1"/>
+      <metrics loc="134" ncloc="109" classes="1" methods="4" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="48" coveredstatements="47" elements="52" coveredelements="50"/>
+    </file>
+    <file name="/app/TestTrait/SubSetAssertionTrait.php">
+      <class name="RichCongress\TestTools\TestTrait\SubSetAssertionTrait" namespace="global">
+        <metrics complexity="2" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="4" coveredelements="4"/>
+      </class>
+      <line num="20" type="method" name="assertSubSet" visibility="protected" complexity="2" crap="2" count="4"/>
+      <line num="22" type="stmt" count="4"/>
+      <line num="23" type="stmt" count="4"/>
+      <line num="25" type="stmt" count="2"/>
+      <metrics loc="26" ncloc="13" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="4" coveredelements="4"/>
+    </file>
+    <file name="/app/TextUi/Output.php">
+      <class name="RichCongress\TestTools\TextUi\Output" namespace="global">
+        <metrics complexity="8" methods="7" coveredmethods="7" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="11" elements="18" coveredelements="18"/>
+      </class>
+      <line num="69" type="method" name="print" visibility="public" complexity="2" crap="2" count="6"/>
+      <line num="71" type="stmt" count="6"/>
+      <line num="73" type="stmt" count="6"/>
+      <line num="74" type="stmt" count="2"/>
+      <line num="77" type="stmt" count="6"/>
+      <line num="79" type="stmt" count="6"/>
+      <line num="87" type="method" name="genAnsiColor" visibility="protected" complexity="1" crap="1" count="6"/>
+      <line num="89" type="stmt" count="6"/>
+      <line num="97" type="method" name="success" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="99" type="stmt" count="1"/>
+      <line num="107" type="method" name="danger" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="109" type="stmt" count="1"/>
+      <line num="117" type="method" name="error" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="119" type="stmt" count="1"/>
+      <line num="127" type="method" name="warning" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="129" type="stmt" count="1"/>
+      <line num="137" type="method" name="info" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="139" type="stmt" count="1"/>
+      <metrics loc="141" ncloc="85" classes="1" methods="7" coveredmethods="7" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="11" elements="18" coveredelements="18"/>
+    </file>
+    <metrics files="17" loc="2038" ncloc="1232" classes="16" methods="89" coveredmethods="86" conditionals="0" coveredconditionals="0" statements="325" coveredstatements="316" elements="414" coveredelements="402"/>
+  </project>
+</coverage>
