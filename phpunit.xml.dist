@@ -12,7 +12,6 @@
         <ini name="error_reporting" value="-1"/>
         <env name="CONFIG_TYPE" value="default"/>
         <env name="SYMFONY_PHPUNIT_VERSION" value="8.5"/>
-        <env name="XDEBUG_PATH_WHITELIST" value="1" />
     </php>
 
     <testsuites>
@@ -35,7 +34,6 @@
             <directory>Tests</directory>
             <directory>var</directory>
             <directory>vendor</directory>
-            <file>phpunit-filter.php</file>
             <file>.phpstorm.meta.php</file>
             <file>phpinsights.php</file>
             <file>RichCongressUnitBundle.php</file>
