@@ -27,9 +27,15 @@ class Parameter
     public $regex;
 
     /**
-     * @var string
+     * @var string[]
      */
     public $choice;
+
+    /** @var array<string, mixed> */
+    public $arraySubMatch;
+
+    /** @var bool */
+    public $isNullable = false;
 
     /**
      * @return static
@@ -85,7 +91,7 @@ class Parameter
     }
 
     /**
-     * @param array $choice
+     * @param string[] $choice
      *
      * @return self
      */
@@ -93,6 +99,16 @@ class Parameter
     {
         $parameter = new static();
         $parameter->choice = $choice;
+
+        return $parameter;
+    }
+
+    /** @var array<string, mixed> $subMatch */
+    public static function arraySubMatch(array $subMatch): self
+    {
+        $parameter = new static();
+        $parameter->type = 'array';
+        $parameter->arraySubMatch = $subMatch;
 
         return $parameter;
     }
@@ -108,6 +124,14 @@ class Parameter
         $parameter->class = $class;
 
         return $parameter;
+    }
+
+
+    public function isNullable(): self
+    {
+        $this->isNullable = true;
+
+        return $this;
     }
 
     /**

@@ -40,7 +40,7 @@ trait MatchAssertionTrait
             $testedValue = static::getMatchValue($tested, $expectedKey);
 
             if ($expectedMatch instanceof Parameter) {
-                static::assertMatchParameter($expectedMatch, $testedValue);
+                static::assertMatchParameter($expectedMatch, $testedValue, $expectedKey);
             } else if (is_array($expectedMatch) || is_object($expectedMatch)) {
                 static::assertMatch($expectedMatch, $testedValue);
             } else if ($expectedMatch !== null) {
@@ -68,43 +68,62 @@ trait MatchAssertionTrait
      *
      * @return void
      */
-    private static function assertMatchParameter(Parameter $parameter, $testedValue): void
+    private static function assertMatchParameter(Parameter $parameter, $testedValue, $testedKey): void
     {
+        $errorMessage = sprintf('The key "%s" is invalid.', $testedKey);
+
+        if ($testedValue === null && $parameter->isNullable) {
+            self::assertNull($testedValue);
+
+            return;
+        }
+
         // Type test
         switch ($parameter->type) {
             case 'string':
-                self::assertIsString($testedValue);
+                self::assertIsString($testedValue, $errorMessage);
                 break;
 
             case 'integer':
-                self::assertIsInt($testedValue);
+                self::assertIsInt($testedValue, $errorMessage);
                 break;
 
             case 'float':
-                self::assertIsFloat($testedValue);
+                self::assertIsFloat($testedValue, $errorMessage);
                 break;
 
             case 'array':
-                self::assertIsArray($testedValue);
+                self::assertIsArray($testedValue, $errorMessage);
                 break;
 
             case 'boolean':
-                self::assertIsBool($testedValue);
+                self::assertIsBool($testedValue, $errorMessage);
                 break;
+        }
+
+        // Array sub match test
+        if ($parameter->arraySubMatch !== null) {
+            foreach ($testedValue as $subValue) {
+                self::assertMatch($parameter->arraySubMatch, $subValue);
+            }
         }
 
         // Regex test
         if ($parameter->regex !== null) {
-            self::assertRegExp($parameter->regex, $testedValue);
+            if (method_exists(static::class, 'assertMatchesRegularExpression')) {
+                self::assertMatchesRegularExpression($parameter->regex, $testedValue, $errorMessage);
+            } else {
+                self::assertRegExp($parameter->regex, $testedValue, $errorMessage);
+            }
         }
 
         // Choice test
         if ($parameter->choice !== null) {
-            self::assertContainsEquals($testedValue, $parameter->choice);
+            self::assertContainsEquals($testedValue, $parameter->choice, $errorMessage);
         }
 
         if ($parameter->class !== null) {
-            self::assertInstanceOf($parameter->class, $testedValue);
+            self::assertInstanceOf($parameter->class, $testedValue, $errorMessage);
         }
     }
 

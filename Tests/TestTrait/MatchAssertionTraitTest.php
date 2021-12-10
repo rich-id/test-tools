@@ -2,6 +2,7 @@
 
 namespace RichCongress\TestTools\Tests\TestTrait;
 
+use PhpParser\Node\Param;
 use RichCongress\TestTools\Accessor\ForcePropertyAccessor;
 use RichCongress\TestTools\TestCase\TestCase;
 use RichCongress\TestTools\Tests\Resources\Entity\DummyEntity;
@@ -28,11 +29,17 @@ class MatchAssertionTraitTest extends TestCase
             'floatValue'  => 3.1,
             'arrayValue'  => ['yes'],
             'isBoolean'   => true,
+            'isNullable'  => null,
             'siret'       => '012345678910',
             'choiceValue' => 'Certain Type',
             'subArray'    => [
                 'instanceOf'  => new DummyEntity(),
-            ]
+            ],
+            'arraySubMatch' => [
+                ['test' => true],
+                ['test' => false],
+                ['test' => null],
+            ],
         ];
 
         $expected = [
@@ -42,11 +49,15 @@ class MatchAssertionTraitTest extends TestCase
             'floatValue'  => Parameter::float(),
             'arrayValue'  => Parameter::array(),
             'isBoolean'   => Parameter::boolean(),
+            'isNullable'  => Parameter::string()->isNullable(),
             'siret'       => Parameter::regex('/\d{12}/'),
             'choiceValue' => Parameter::choice(['Certain Type', 'Other Type']),
             'subArray'    => [
                 'instanceOf'  => Parameter::instanceOf(DummyEntity::class),
             ],
+            'arraySubMatch' => Parameter::arraySubMatch([
+                'test' => Parameter::boolean()->isNullable(),
+            ])
         ];
 
         self::assertMatch($expected, $tested);
