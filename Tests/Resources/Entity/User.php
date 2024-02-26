@@ -12,33 +12,20 @@ use Symfony\Component\Security\Core\User\UserInterface;
  * @package   RichCongress\TestTools\Tests\Resources\Entity
  * @author    Nicolas Guilloux <nguilloux@richcongress.com>
  * @copyright 2014 - 2019 RichCongress (https://www.richcongress.com)
- *
- * @ORM\Entity
  */
+#[ORM\Entity]
 class User implements UserInterface
 {
-    /**
-     * @var integer
-     *
-     * @ORM\Id
-     * @ORM\GeneratedValue
-     * @ORM\Column(type="integer")
-     */
-    protected $id;
+    #[ORM\Id]
+    #[ORM\GeneratedValue]
+    #[ORM\Column(type: 'integer')]
+    protected int $id;
 
-    /**
-     * @var string
-     *
-     * @ORM\Column(type="string", nullable=true)
-     */
-    protected $username;
+    #[ORM\Column(type: 'string', nullable: true)]
+    protected ?string $username;
 
-    /**
-     * @var string
-     *
-     * @ORM\Column(type="string", nullable=true)
-     */
-    protected $password;
+    #[ORM\Column(type: 'string', nullable: true)]
+    protected ?string $password;
 
     /**
      * @var array
@@ -86,23 +73,9 @@ class User implements UserInterface
     }
 
     /**
-     * Returns the salt that was originally used to encode the password.
-     *
-     * This can return null if the password was not encoded using a salt.
-     *
-     * @return string|null The salt
+     * Returns the identifier for this user (e.g. username or email address).
      */
-    public function getSalt(): ?string
-    {
-        return null;
-    }
-
-    /**
-     * Returns the username used to authenticate the user.
-     *
-     * @return string The username
-     */
-    public function getUsername(): string
+    public function getUserIdentifier(): string
     {
         return $this->username;
     }

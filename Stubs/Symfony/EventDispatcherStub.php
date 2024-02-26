@@ -43,9 +43,8 @@ class EventDispatcherStub implements EventDispatcherInterface
      *
      * @codeCoverageIgnore
      */
-    public function addListener($eventName, $listener, $priority = 0)
+    public function addListener($eventName, $listener, $priority = 0): void
     {
-        // TODO: Implement addListener() method.
     }
 
     /**
@@ -53,9 +52,8 @@ class EventDispatcherStub implements EventDispatcherInterface
      *
      * @codeCoverageIgnore
      */
-    public function addSubscriber(EventSubscriberInterface $subscriber)
+    public function addSubscriber(EventSubscriberInterface $subscriber): void
     {
-        // TODO: Implement addSubscriber() method.
     }
 
     /**
@@ -63,9 +61,8 @@ class EventDispatcherStub implements EventDispatcherInterface
      *
      * @codeCoverageIgnore
      */
-    public function removeListener($eventName, $listener)
+    public function removeListener($eventName, $listener): void
     {
-        // TODO: Implement removeListener() method.
     }
 
     /**
@@ -73,9 +70,8 @@ class EventDispatcherStub implements EventDispatcherInterface
      *
      * @codeCoverageIgnore
      */
-    public function removeSubscriber(EventSubscriberInterface $subscriber)
+    public function removeSubscriber(EventSubscriberInterface $subscriber): void
     {
-        // TODO: Implement removeSubscriber() method.
     }
 
     /**
@@ -83,9 +79,9 @@ class EventDispatcherStub implements EventDispatcherInterface
      *
      * @codeCoverageIgnore
      */
-    public function getListeners($eventName = null)
+    public function getListeners($eventName = null): array
     {
-        // TODO: Implement getListeners() method.
+        return [];
     }
 
     /**
@@ -93,9 +89,9 @@ class EventDispatcherStub implements EventDispatcherInterface
      *
      * @codeCoverageIgnore
      */
-    public function getListenerPriority($eventName, $listener)
+    public function getListenerPriority($eventName, $listener): ?int
     {
-        // TODO: Implement getListenerPriority() method.
+        return null;
     }
 
     /**
@@ -103,8 +99,8 @@ class EventDispatcherStub implements EventDispatcherInterface
      *
      * @codeCoverageIgnore
      */
-    public function hasListeners($eventName = null)
+    public function hasListeners($eventName = null): bool
     {
-        // TODO: Implement hasListeners() method.
+        return false;
     }
 }

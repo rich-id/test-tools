@@ -58,7 +58,7 @@ final class ForcePropertyAccessor implements PropertyAccessorInterface
      *
      * @return mixed|null
      */
-    public function getValue($objectOrArray, $propertyPath)
+    public function getValue($objectOrArray, $propertyPath): mixed
     {
         try {
             return $this->innerPropertyAccessor->getValue($objectOrArray, $propertyPath);

@@ -49,7 +49,7 @@ class ContainerStub implements ContainerInterface
      *
      * @return mixed
      */
-    public function get($id, $invalidBehavior = self::EXCEPTION_ON_INVALID_REFERENCE)
+    public function get($id, $invalidBehavior = self::EXCEPTION_ON_INVALID_REFERENCE): ?object
     {
         return $this->services[$id] ?? null;
     }

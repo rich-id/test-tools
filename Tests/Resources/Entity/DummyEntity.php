@@ -10,9 +10,8 @@ use Doctrine\ORM\Mapping as ORM;
  * @package   RichCongress\TestTools\Tests\Resources\Entity
  * @author    Nicolas Guilloux <nguilloux@richcongress.com>
  * @copyright 2014 - 2019 RichCongress (https://www.richcongress.com)
- *
- * @ORM\Entity
  */
+#[ORM\Entity]
 class DummyEntity extends AbstractDummyEntity
 {
     /**
@@ -25,28 +24,16 @@ class DummyEntity extends AbstractDummyEntity
      */
     protected static $protectedVariable;
 
-    /**
-     * @var integer
-     *
-     * @ORM\Id
-     * @ORM\GeneratedValue
-     * @ORM\Column(type="integer")
-     */
-    protected $id;
+    #[ORM\Id]
+    #[ORM\GeneratedValue]
+    #[ORM\Column(type: 'integer')]
+    protected int $id;
 
-    /**
-     * @var string
-     *
-     * @ORM\Column(type="string", nullable=true)
-     */
-    protected $name;
+    #[ORM\Column(type: 'string', nullable: true)]
+    protected ?string $name;
 
-    /**
-     * @var string
-     *
-     * @ORM\Column(type="string", nullable=true)
-     */
-    protected $keyname;
+    #[ORM\Column(type: 'string', nullable: true)]
+    protected ?string $keyname;
 
     private $privateVariable;
 

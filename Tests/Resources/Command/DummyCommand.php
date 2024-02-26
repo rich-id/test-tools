@@ -2,6 +2,7 @@
 
 namespace RichCongress\TestTools\Tests\Resources\Command;
 
+use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
@@ -13,10 +14,9 @@ use Symfony\Component\Console\Output\OutputInterface;
  * @author    Nicolas Guilloux <nguilloux@richcongress.com>
  * @copyright 2014 - 2019 RichCongress (https://www.richcongress.com)
  */
+#[AsCommand('dummy:command')]
 class DummyCommand extends Command
 {
-    public static $defaultName = 'dummy:command';
-
     /**
      * @param InputInterface  $input
      * @param OutputInterface $output

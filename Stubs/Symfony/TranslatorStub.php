@@ -41,6 +41,11 @@ class TranslatorStub implements TranslatorInterface
         return $translation;
     }
 
+    public function getLocale(): string
+    {
+        return 'fr';
+    }
+
     /**
      * @param string $id
      * @param string $translation
