@@ -1,7 +1,7 @@
 The Test Tools library
 =======================================
 
-This version of the bundle requires PHP 7.3+.
+This version of the bundle requires PHP 8.1+.
 
 [![Package version](https://img.shields.io/packagist/v/richcongress/test-tools)](https://packagist.org/packages/richcongress/test-tools)
 [![Actions Status](https://github.com/richcongress/test-tools/workflows/Tests/badge.svg)](https://github.com/richcongress/test-tools/actions)
@@ -30,7 +30,7 @@ Quick showcase
 
 # 1. Installation
 
-This version of the bundle requires PHP 7.3+.
+This version of the bundle requires PHP 8.1+.$
 
 ```bash
 composer require richcongress/test-tools
