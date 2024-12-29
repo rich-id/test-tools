@@ -6,12 +6,12 @@
          bootstrap="vendor/autoload.php"
          failOnWarning="true"
          failOnRisky="true"
-         forceCoversAnnotation="true"
+         requireCoverageMetadata="true"
 >
     <php>
         <ini name="error_reporting" value="-1"/>
         <env name="CONFIG_TYPE" value="default"/>
-        <env name="SYMFONY_PHPUNIT_VERSION" value="8.5"/>
+        <env name="SYMFONY_PHPUNIT_VERSION" value="10.5"/>
     </php>
 
     <testsuites>
@@ -20,9 +20,9 @@
         </testsuite>
     </testsuites>
 
-    <coverage processUncoveredFiles="true">
+    <source>
         <include>
-            <directory suffix=".php">.</directory>
+            <directory>.</directory>
         </include>
         <exclude>
             <directory>app</directory>
@@ -38,5 +38,5 @@
             <file>phpinsights.php</file>
             <file>RichCongressUnitBundle.php</file>
         </exclude>
-    </coverage>
+    </source>
 </phpunit>

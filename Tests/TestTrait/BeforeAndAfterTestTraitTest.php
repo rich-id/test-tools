@@ -18,7 +18,7 @@ final class BeforeAndAfterTestTraitTest extends TestCase
 {
     public function testBeforeTestExecution(): void
     {
-        $testCase = new DummyTestTrait();
+        $testCase = new DummyTestTrait('dummy test trait');
         self::assertFalse($testCase->beforeTestExecuted);
 
         $testCase->setUp();
@@ -27,7 +27,7 @@ final class BeforeAndAfterTestTraitTest extends TestCase
 
     public function testAfterTestExecution(): void
     {
-        $testCase = new DummyTestTrait();
+        $testCase = new DummyTestTrait('dummy test trait');
         self::assertFalse($testCase->afterTestExecuted);
 
         $testCase->tearDown();
