@@ -19,7 +19,7 @@ final class ForcePropertyAccessor implements PropertyAccessorInterface
     /** @var PropertyAccessorInterface */
     private $innerPropertyAccessor;
 
-    public function __construct(PropertyAccessorInterface $propertyAccessor = null)
+    public function __construct(?PropertyAccessorInterface $propertyAccessor = null)
     {
         if ($propertyAccessor === null) {
             $this->innerPropertyAccessor = PropertyAccess::createPropertyAccessorBuilder()
