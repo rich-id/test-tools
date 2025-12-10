@@ -58,14 +58,10 @@ class ForceExecutionHelper
     public static function executeMethod($object, string $method, ...$args)
     {
         $reflectionMethod = static::getReflectionMethod($object, $method);
-        $reflectionMethod->setAccessible(true);
-        $value = $reflectionMethod->isStatic()
+
+        return $reflectionMethod->isStatic()
             ? $reflectionMethod->invoke(null, ...$args)
             : $reflectionMethod->invoke($object, ...$args);
-
-        $reflectionMethod->setAccessible(false);
-
-        return $value;
     }
 
     /**
@@ -75,12 +71,10 @@ class ForceExecutionHelper
     public static function setValue($object, string $propertyName, $value): void
     {
         $reflectionProperty = static::getReflectionProperty($object, $propertyName);
-        $reflectionProperty->setAccessible(true);
+
         $reflectionProperty->isStatic()
             ? $reflectionProperty->setValue(null, $value)
             : $reflectionProperty->setValue($object, $value);
-
-        $reflectionProperty->setAccessible(false);
     }
 
     /**

@@ -46,9 +46,7 @@ final class ForcePropertyAccessor implements PropertyAccessorInterface
                 throw $exception;
             }
 
-            $propertyReflection->setAccessible(true);
             $propertyReflection->setValue($objectOrArray, $value);
-            $propertyReflection->setAccessible(false);
         }
     }
 
@@ -69,11 +67,7 @@ final class ForcePropertyAccessor implements PropertyAccessorInterface
                 throw $exception;
             }
 
-            $propertyReflection->setAccessible(true);
-            $value = $propertyReflection->getValue($objectOrArray);
-            $propertyReflection->setAccessible(false);
-
-            return $value;
+            return $propertyReflection->getValue($objectOrArray);
         }
     }
 
